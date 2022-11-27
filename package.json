@@ -1,7 +1,7 @@
 {
   "name": "smart-library-cet",
   "version": "1.0.0",
-  "description": "A new age library management system built by CET students for IT library",
+  "description": "A new age library management system built for CET IT library",
   "main": "app.js",
   "engines": {
     "node": "16.x",
