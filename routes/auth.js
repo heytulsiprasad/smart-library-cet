@@ -19,6 +19,7 @@ router.post("/auth/admin-login", passport.authenticate("local", {
         successRedirect : "/admin",
         failureRedirect : "/auth/admin-login",
     }), (req, res)=> {
+        console.log({ req, res });
 });
 
 //admin logout handler

@@ -50,7 +50,7 @@ mongoose
   .then(() => console.log("MongoDB is connected"))
   .catch((error) => console.log(error));
 
-//PASSPORT CONFIGURATION
+// PASSPORT CONFIGURATION
 
 const store = new MongoStore({
   uri: process.env.DB_URL,
