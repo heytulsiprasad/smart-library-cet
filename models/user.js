@@ -14,6 +14,10 @@ const userSchema = new mongoose.Schema({
     type: String,
     trim: true,
   },
+  registration_no: {
+    type: Number,
+    trim: true,
+  },
   email: {
     type: String,
     trim: true,
@@ -31,7 +35,6 @@ const userSchema = new mongoose.Schema({
     },
   ],
   gender: String,
-  address: String,
   image: {
     type: String,
     default: "",

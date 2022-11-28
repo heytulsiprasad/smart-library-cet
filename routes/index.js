@@ -86,7 +86,6 @@ router.post("/signUp", (req, res) => {
       username : req.body.username,
       email : req.body.email,
       gender : req.body.gender,
-      address : req.body.address,
    });
    
    User.register(newUser, req.body.password, (err, user) =>{

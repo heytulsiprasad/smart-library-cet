@@ -99,7 +99,6 @@ exports.putUpdateUserProfile = async(req, res, next) => {
             "lastName": req.body.lastName,
             "email": req.body.email,
             "gender": req.body.gender,
-            "address": req.body.address,
         }
         await User.findByIdAndUpdate(req.user._id, userUpdateInfo);
 

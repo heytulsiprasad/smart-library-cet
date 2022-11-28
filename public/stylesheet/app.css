@@ -1,3 +1,8 @@
+body {
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: 'Poppins', sans-serif;
+}
+
 .btn-group-xs > .btn, .btn-xs {
   padding: .40rem .40rem;
   font-size: .8rem;
@@ -5,20 +10,36 @@
   border-radius: .2rem;
 }
 
+.nav {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav img {
+  height: 100px;
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
 }
 
-footer { 
-  flex: 0 0 auto;
+.main {
   display: flex;
-  color: #ccc;
-  margin: 1em;
-  padding: 1em;
-  width: 80%;
-  border-top: 1px solid blue;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+footer { 
+  display: flex;
   justify-content: center;
+  align-items: center;
+  color: #aaa;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 .table-text {
