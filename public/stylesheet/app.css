@@ -46,3 +46,13 @@ footer {
   color: red;
   font-weight: bold;
 }
+
+.dashboard-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dashboard-nav img {
+  height: 100px;
+}

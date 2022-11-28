@@ -38,7 +38,7 @@ exports.postAdminSignUp = async (req, res, next) => {
         res.redirect("/admin");
       });
     } else {
-      req.flash("error", "Secret code does not matching!");
+      req.flash("error", "IT Branch code does not matching!");
       return res.redirect("back");
     }
   } catch (err) {
