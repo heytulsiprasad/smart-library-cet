@@ -56,3 +56,9 @@ footer {
 .dashboard-nav img {
   height: 100px;
 }
+
+.userNav_item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

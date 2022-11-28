@@ -15,26 +15,29 @@
           <%if(currentUser) { %>
              <ul class="navbar-nav ml-auto">
             
-            <%if(currentUser.violationFlag) { %>
-              <li class="nav-item align-self-center mr-2">
-                <i class="fa fa-flag text-danger"></i>
-              </li>
-            <% } %>
-              <li class="nav-item dropdown mr-3">
-                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                  <%=currentUser.username%>
-                </a>
-                <div class="dropdown-menu">
-                  <a href="/user/1/profile" class="dropdown-item">
+                <%if(currentUser.violationFlag) { %>
+                  <li class="nav-item align-self-center mr-2">
+                    <i class="fa fa-flag text-danger"></i>
+                  </li>
+                <% } %>
+
+                <li class="nav-item mr-4 userNav_item">
+                  <a class="text-light" href="/user/1/profile">
                     <i class="fa fa-user-circle"></i> Profile
                   </a>
-      
-                  <a href="/auth/user-logout" class="dropdown-item">
+                </li>
+
+                <li class="nav-item mr-4 userNav_item">
+                  <a class="text-light" href="/auth/user-logout">
                     <i class="fa fa-user-times"></i> Logout
                   </a>
-                </div>
-              </li>
-          
+                </li>
+
+                <li class="nav-item mr-4 userNav_item">
+                  <a href="/user/1/notification" class="nav-link">
+                      <i class="fa fa-bell"></i><span class="badge badge-danger badge-pill">2</span>
+                  </a>
+                </li>
             </ul>
           <% } %>
          
